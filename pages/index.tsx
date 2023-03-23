@@ -28,6 +28,7 @@ export default function Index() {
     const timer = setInterval(() => {
       try {
         axios.get("http://127.0.0.1:9887/getUser").then((res) => {
+          res.data.name = res.data.name.split("Q群")[0]
           setStatus(res.data);
         }).catch(e => {})
       } catch {}
