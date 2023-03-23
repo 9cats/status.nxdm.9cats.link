@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+  -webkit-animation: App-logo-spin 20s linear infinite;
+  animation: App-logo-spin 20s linear infinite;
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+.App-link {
+  color: #61dafb;
+}
+.fill-window {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+g.apexcharts-yaxis-annotations > line {
+  stroke-width: 3 !important;
+}
+@-webkit-keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 300px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Rubik, sans-serif;
+}
+@keyframes cyberpunk-heart-blink-keyframes {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+    position: relative;
+    top: -2px;
+    left: 2px;
+  }
+  11% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0;
+  }
+  13% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+    position: relative;
+    top: 1px;
+    left: -2px;
+  }
+  30% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  52% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cyberpunk-heart-blink-keyframes {
+  50% {
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: Neon Tubes\2;
+  src: url(https://pulsoid-magi.nyc3.cdn.digitaloceanspaces.com/widget-source/fonts/NeonTubes2.otf);
+}
+.beatSaberHeartRate {
+  color: #fff;
+  font-size: 200px;
+  font-family: Neon Tubes\2;
+  text-shadow: 0 0 4px #fff, -12px -8px 10px rgba(0, 144, 255, 0.73),
+    9px 10px 10px rgba(0, 144, 255, 0.73), -1px -1px 5px #0090ff,
+    0 0 20px #0090ff, 0 0 40px #0090ff, 0 0 80px #0090ff, 0 0 28px #fff,
+    0 0 8px #fff;
+}
+@font-face {
+  font-family: Minecraft;
+  src: url(https://pulsoid-magi.nyc3.cdn.digitaloceanspaces.com/widget-source/fonts/minecraft_font2.otf);
+}
+#line1,
+#line2,
+#line3 {
+  color: #11a2b1;
+  font-family: Helvetica Neue;
+  line-height: 25px;
+  text-shadow: -2px 0 1px #121721;
+  text-align: center;
+}
+#line1 {
+  font-size: 45px;
+}
+#line2 {
+  font-size: 40px;
+}
+#line3 {
+  font-size: 29px;
+}
+.resident-evil-widget-container {
+  position: relative;
+  background: url(https://pulsoid-magi.nyc3.cdn.digitaloceanspaces.com/widget-source/resident-evil-status/resident-evil-status-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 187px;
+}
+.resident-evil-widget-pulse {
+  position: absolute;
+  top: 36px;
+  right: 48px;
+  font-size: 40.5px;
+  font-family: Press Start\2P, sans-serif;
+}
+.resident-evil-widget-status {
+  position: absolute;
+  bottom: 44px;
+  right: 48px;
+  height: 39px;
+  width: 166px;
+  font-family: Press Start\2P;
+}
+@-webkit-keyframes resident-evil-widget-ekg {
+  0% {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  20% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    stroke-dashoffset: -200;
+    opacity: 0.1;
+  }
+  to {
+    stroke-dashoffset: -250;
+    opacity: 0;
+  }
+}
+@keyframes resident-evil-widget-ekg {
+  0% {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  20% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    stroke-dashoffset: -200;
+    opacity: 0.1;
+  }
+  to {
+    stroke-dashoffset: -250;
+    opacity: 0;
+  }
+}
+.resident-evil-widget-ekg-svg {
+  position: absolute;
+  z-index: 100;
+  top: 26px;
+  left: 50px;
+  height: 132px;
+  stroke-width: 3;
+  stroke-dasharray: 80 300;
+  -webkit-animation: resident-evil-widget-ekg 3s linear forwards;
+  animation: resident-evil-widget-ekg 3s linear forwards;
+}
+/*# sourceMappingURL=main.688e71b8.chunk.css.map */
