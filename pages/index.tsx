@@ -39,7 +39,7 @@ export default function Index() {
     };
   }, []);
 
-  return <div>{status.initialized ? <div>
+  return <div className="app">{status.initialized ? <div>
     <div>服务器信息：</div>
     <div>名称：{status.name}</div>
     <div>地图：{status.map}</div>
