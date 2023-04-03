@@ -57,10 +57,18 @@ export default function Index() {
             <div>地址：{`${status.host}:${status.port}`}</div>
           </div>
         ) : (
-          <div>已连接到小帮手.</div>
+          <div>
+            <div>QQ群：1062514244</div>
+            <div>直播时间：19:00 - 23:00</div>
+            <div>直播游戏：主要为CS僵尸逃跑</div>
+          </div>
         )
       ) : (
-        <div>未连接到小帮手...</div>
+        <div>
+          <div>QQ群：1062514244</div>
+          <div>直播时间：19:00 - 23:00</div>
+          <div>直播游戏：主要为CS僵尸逃跑</div>
+        </div>
       )}
     </div>
   );
