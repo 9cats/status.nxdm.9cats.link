@@ -47,27 +47,20 @@ export default function Index() {
 
   return (
     <div className="app">
-      {connected ? (
-        status.initialized ? (
-          <div>
-            <div>服务器信息：</div>
-            <div>名称：{status.name}</div>
-            <div>地图：{status.map}</div>
-            {status.mapchiname ? <div>译名：{status.mapchiname}</div> : ""}
-            <div>地址：{`${status.host}:${status.port}`}</div>
-          </div>
-        ) : (
-          <div>
-            <div>QQ群：1062514244</div>
-            <div>直播时间：19:00 - 23:00</div>
-            <div>直播游戏：主要为CS僵尸逃跑</div>
-          </div>
-        )
+      {connected && status.initialized ? (
+        <div>
+          <div>服务器信息：</div>
+          <div>名称：{status.name}</div>
+          <div>地图：{status.map}</div>
+          {status.mapchiname ? <div>译名：{status.mapchiname}</div> : ""}
+          <div>地址：{`${status.host}:${status.port}`}</div>
+        </div>
       ) : (
         <div>
           <div>QQ群：1062514244</div>
-          <div>直播时间：19:00 - 23:00</div>
-          <div>直播游戏：主要为CS僵尸逃跑</div>
+          <div>直播时间：19点~22点</div>
+          <div>工作日直播约两个小时</div>
+          <div>直播游戏：CS僵尸逃跑</div>
         </div>
       )}
     </div>
