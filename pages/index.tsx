@@ -53,7 +53,6 @@ export default function Index() {
           <div>名称：{status.name}</div>
           <div>地图：{status.map}</div>
           {status.mapchiname ? <div>译名：{status.mapchiname}</div> : ""}
-          <div>地址：{`${status.host}:${status.port}`}</div>
         </div>
       ) : (
         <div>
